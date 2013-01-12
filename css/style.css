@@ -1,0 +1,25 @@
+.styled_box{
+    display: none;
+}
+.styled_box + label{
+    display: inline-block;
+}
+
+.styled_box.type1 + label{
+    background: url(../images/bettercheckbox.gif) no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+}
+
+.styled_box.type1 + label:hover {
+    background: url(../images/bettercheckbox.gif) no-repeat 0 -14px;
+    cursor: pointer;
+}
+
+.styled_box.type1:checked + label {
+    background-position: bottom;
+}
+
+.stylebox.type1:checked + label:hover {
+    background: url(../images/bettercheckbox.gif) no-repeat 0 bottom;
+}
